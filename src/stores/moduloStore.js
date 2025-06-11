@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-const url = "http://localhost:8080/";
+const url = "https://gestion-academica-back-1.onrender.com/";
 
 export const useModuloStore = defineStore("modulo", () =>{
     const modulos = ref([]);
