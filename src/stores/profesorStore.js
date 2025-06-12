@@ -8,7 +8,7 @@ export const useProfesroStore = defineStore("profesor", () => {
 
     const getProfesores = async () => {
         try {
-            const response = await fetch("http://localhost:8080/profesores");
+            const response = await fetch(url+ "profesores");
             if (!response.ok) {
                 throw new Error("Ha ocurrido un error");
             }
